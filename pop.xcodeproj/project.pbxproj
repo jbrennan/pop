@@ -60,8 +60,24 @@
 		5E17BB2117457345009842B6 /* POPCustomAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E17BB1F17457345009842B6 /* POPCustomAnimation.mm */; };
 		7B7FF72795778336E053C4DC /* libPods-pop-tests-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB94B07F3EC25AA472F3A63 /* libPods-pop-tests-ios.a */; };
 		90AA30B718988BBE00E3BDF7 /* POPSpringSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 90AA30B618988BBE00E3BDF7 /* POPSpringSolver.h */; };
-		964A70DB1B6AC5200090236D /* pop_osx_static.h in Headers */ = {isa = PBXBuildFile; fileRef = 964A70DA1B6AC5200090236D /* pop_osx_static.h */; };
-		964A70DD1B6AC5200090236D /* pop_osx_static.m in Sources */ = {isa = PBXBuildFile; fileRef = 964A70DC1B6AC5200090236D /* pop_osx_static.m */; };
+		964A71131B6AC6EE0090236D /* POPAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC191289162FB5B700E0CC76 /* POPAnimation.mm */; };
+		964A71141B6AC6EE0090236D /* POPPropertyAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC8F014A18FFBC8200DF8905 /* POPPropertyAnimation.mm */; };
+		964A71151B6AC6EE0090236D /* POPBasicAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC8F014E18FFBD3E00DF8905 /* POPBasicAnimation.mm */; };
+		964A71161B6AC6EE0090236D /* POPCustomAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E17BB1F17457345009842B6 /* POPCustomAnimation.mm */; };
+		964A71171B6AC6EE0090236D /* POPDecayAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC8F015B18FFBE8C00DF8905 /* POPDecayAnimation.mm */; };
+		964A71181B6AC6EE0090236D /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC8F016718FFBEB500DF8905 /* POPSpringAnimation.mm */; };
+		964A71191B6AC6F20090236D /* POPAnimatableProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC19128F162FB5B700E0CC76 /* POPAnimatableProperty.mm */; };
+		964A711A1B6AC6F20090236D /* POPAnimationEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC9997541756A0C300A73F49 /* POPAnimationEvent.mm */; };
+		964A711B1B6AC6F20090236D /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC0AE13016BC73CE001DA2CE /* POPAnimationExtras.mm */; };
+		964A711C1B6AC6F20090236D /* POPAnimationRuntime.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC95538F1743E278001E6AF2 /* POPAnimationRuntime.mm */; };
+		964A711D1B6AC6F20090236D /* POPAnimationTracer.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC35DB2718EE3E820023E077 /* POPAnimationTracer.mm */; };
+		964A711E1B6AC6F20090236D /* POPAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC19128C162FB5B700E0CC76 /* POPAnimator.mm */; };
+		964A711F1B6AC6F60090236D /* POPCGUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC67007118D3D89F00F7387F /* POPCGUtils.mm */; };
+		964A71201B6AC6F60090236D /* POPGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = ECD80F1018CFD2EF00AE4303 /* POPGeometry.mm */; };
+		964A71211B6AC6F60090236D /* POPLayerExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC94B07C17D95CAA003CE2C8 /* POPLayerExtras.mm */; };
+		964A71221B6AC6F60090236D /* POPMath.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC6465CF1794B4660014176F /* POPMath.mm */; };
+		964A71231B6AC6F60090236D /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC70AC4218CCF4FC0067018C /* POPVector.mm */; };
+		964A712F1B6AC75A0090236D /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC94B07717D95447003CE2C8 /* TransformationMatrix.cpp */; };
 		ADE1BB0636F940EC8EA7EE57 /* libPods-pop-tests-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D411892A480A401FB4D1AA07 /* libPods-pop-tests-osx.a */; };
 		EC0AE13116BC73CE001DA2CE /* POPAnimationExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0AE12F16BC73CE001DA2CE /* POPAnimationExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC0AE13216BC73CE001DA2CE /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC0AE13016BC73CE001DA2CE /* POPAnimationExtras.mm */; };
@@ -704,7 +720,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				964A70DB1B6AC5200090236D /* pop_osx_static.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1073,7 +1088,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				964A70DD1B6AC5200090236D /* pop_osx_static.m in Sources */,
+				964A71131B6AC6EE0090236D /* POPAnimation.mm in Sources */,
+				964A71221B6AC6F60090236D /* POPMath.mm in Sources */,
+				964A71141B6AC6EE0090236D /* POPPropertyAnimation.mm in Sources */,
+				964A71181B6AC6EE0090236D /* POPSpringAnimation.mm in Sources */,
+				964A711E1B6AC6F20090236D /* POPAnimator.mm in Sources */,
+				964A712F1B6AC75A0090236D /* TransformationMatrix.cpp in Sources */,
+				964A711B1B6AC6F20090236D /* POPAnimationExtras.mm in Sources */,
+				964A71171B6AC6EE0090236D /* POPDecayAnimation.mm in Sources */,
+				964A71191B6AC6F20090236D /* POPAnimatableProperty.mm in Sources */,
+				964A71201B6AC6F60090236D /* POPGeometry.mm in Sources */,
+				964A711D1B6AC6F20090236D /* POPAnimationTracer.mm in Sources */,
+				964A71231B6AC6F60090236D /* POPVector.mm in Sources */,
+				964A71211B6AC6F60090236D /* POPLayerExtras.mm in Sources */,
+				964A71151B6AC6EE0090236D /* POPBasicAnimation.mm in Sources */,
+				964A711A1B6AC6F20090236D /* POPAnimationEvent.mm in Sources */,
+				964A711C1B6AC6F20090236D /* POPAnimationRuntime.mm in Sources */,
+				964A711F1B6AC6F60090236D /* POPCGUtils.mm in Sources */,
+				964A71161B6AC6EE0090236D /* POPCustomAnimation.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1558,6 +1590,7 @@
 				964A70EB1B6AC5210090236D /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC191212162FB53A00E0CC76 /* Build configuration list for PBXProject "pop" */ = {
 			isa = XCConfigurationList;
